@@ -1,0 +1,132 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+body.glass-theme {
+  min-height: 100vh;
+  color: #DFDEE0;
+  background: linear-gradient(-45deg, #000000, #3A5228, #570C13, #1a060a);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body.glass-theme .navbar {
+  background: rgba(30, 30, 30, 0.55) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+body.glass-theme .navbar-brand,
+body.glass-theme .navbar .nav-link,
+body.glass-theme .navbar .btn-link,
+body.glass-theme .footer,
+body.glass-theme .footer a {
+  color: #DFDEE0 !important;
+}
+
+body.glass-theme .navbar .nav-link:hover,
+body.glass-theme .footer a:hover {
+  color: #ffffff !important;
+}
+
+body.glass-theme .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+body.glass-theme .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+body.glass-theme .glass-card {
+  background: rgba(30, 30, 30, 0.35);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 3rem;
+  margin-top: 2rem;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+body.glass-theme .glass-card h1 {
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+body.glass-theme .glass-card hr {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+body.glass-theme .glass-card a {
+  color: #AC9CA5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+body.glass-theme .glass-card a:hover {
+  color: #DFDEE0;
+}
+
+body.glass-theme .glass-home {
+  padding: 5rem 3rem;
+}
+
+body.glass-theme .glass-home h1 {
+  margin-bottom: 1rem;
+}
+
+body.glass-theme .glass-home p,
+body.glass-theme .glass-privacy p {
+  margin-bottom: 0;
+}
+
+body.glass-theme .glass-privacy h1 {
+  margin-bottom: 1.5rem;
+}
+
+body.glass-theme .glass-privacy p {
+  color: #DFDEE0;
+}
+
+@media (max-width: 575.98px) {
+  body.glass-theme .glass-card {
+    padding: 2rem 1.5rem;
+  }
+}
