@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using OficinaEF.Models;
 
@@ -10,6 +11,27 @@ public class HomeController : Controller
     {
         return View();
     }
+
+    [Authorize(Roles = "Admin,Atendente")]
+    public IActionResult Atendente()
+    {
+        return View();
+    }
+
+    [Authorize(Roles = "Admin")]
+
+    public IActionResult Admin()
+    {
+        return View();
+    }
+    
+    [Authorize(Roles = "Admin,Atendente,Cliente")]
+     public IActionResult Cliente()
+    {
+        return View();
+    }
+
+
 
     public IActionResult Privacy()
     {
