@@ -817,3 +817,4 @@ C:\Users\47803228801\Desktop\MVC\OficinaEF\obj\Debug\net10.0\refint\OficinaEF.dl
 C:\Users\47803228801\Desktop\MVC\OficinaEF\obj\Debug\net10.0\OficinaEF.pdb
 C:\Users\47803228801\Desktop\MVC\OficinaEF\obj\Debug\net10.0\OficinaEF.genruntimeconfig.cache
 C:\Users\47803228801\Desktop\MVC\OficinaEF\obj\Debug\net10.0\ref\OficinaEF.dll
+C:\Users\47803228801\Desktop\MVC\OficinaEF\obj\Debug\net10.0\compressed\krby2xlm0f-{0}-d1tkq6rgg5-d1tkq6rgg5.gz
